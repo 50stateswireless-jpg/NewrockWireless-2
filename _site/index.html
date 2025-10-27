@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NewRock Wireless | Premium Electronics</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<link rel="stylesheet" href="/newrock-wireless/assets/css/custom.css">
+
+</head>
+<body class="min-h-screen">
+  
+<header class="nrw-bg-blue shadow-lg sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <div class="flex-shrink-0">
+        <a href="#" onclick="app.setView('home')" class="text-3xl font-extrabold nrw-text-red tracking-tight" style="line-height: 1;">
+          NewRock<span class="text-white ml-0.5">Wireless</span>
+        </a>
+      </div>
+
+      <nav class="hidden md:flex space-x-4">
+        <button onclick="app.setView('home')" class="text-white hover:text-red-300 px-3 py-2 rounded-md text-sm font-medium transition duration-150">Home</button>
+        <button onclick="app.setView('home', 'Plan')" class="text-white hover:text-red-300 px-3 py-2 rounded-md text-sm font-medium transition duration-150">Plan</button>
+        <button onclick="app.setView('home', 'Internet Service')" class="text-white hover:text-red-300 px-3 py-2 rounded-md text-sm font-medium transition duration-150">Internet Service</button>
+        <button onclick="app.setView('home', 'Tablet')" class="text-white hover:text-red-300 px-3 py-2 rounded-md text-sm font-medium transition duration-150">Tablet</button>
+        <button onclick="app.setView('home', 'Phone')" class="text-white hover:text-red-300 px-3 py-2 rounded-md text-sm font-medium transition duration-150">Phone</button>
+        <button onclick="app.setView('home', 'WiFi')" class="text-white hover:text-red-300 px-3 py-2 rounded-md text-sm font-medium transition duration-150">WiFi</button>
+        <button onclick="app.setView('home', 'Headsets & Earbuds')" class="text-white hover:text-red-300 px-3 py-2 rounded-md text-sm font-medium transition duration-150">Headsets & Earbuds</button>
+        <button onclick="app.setView('home', 'Smart Watches')" class="text-white hover:text-red-300 px-3 py-2 rounded-md text-sm font-medium transition duration-150">Smart Watches</button>
+      </nav>
+
+      <div class="flex items-center">
+        <button id="cartButton" onclick="app.setView('cart')" class="relative p-2 rounded-full text-white nrw-text-red nrw-btn-blue hover:text-white transition duration-150 focus:outline-none">
+          <svg id="shopping-cart-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+          <span id="cartCount" class="absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-white transform translate-x-1/2 -translate-y-1/2 nrw-bg-red rounded-full">0</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+  <main id="app-container" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 min-h-[calc(100vh-64px)]">
+    
+  </main>
+
+<script>
+// Keep original product structure for detail view
+const rawProducts = [{"id":1,"name":"Verizon Home Internet 300 Mbps","category":"Internet Service","price":34.95,"description":"Up to 300 Mbps speeds Download and upload speeds of up to 300 Mbps Availability varies. Wired speeds advertised. Wireless speeds may vary due to device limits, multiple users, network & other factors. See Verizon.com/yourspeed for more info. Router included at no additional cost State-of-the art router featuring the latest Wi-Fi generation, Wi-Fi 6E, that provides more spectrum for increased speeds, better coverage, lower latency, built-in security, parental controls and more. Verizon owns the router included with your plan. If you choose to disconnect service, you must return equipment within 30 days, or you'll incur charges. 3-year price lock guarantee** So you don’t need to worry about unexpected price hikes. **For new and existing myHome customers. Applies only to the then-current base monthly rate exclusive of any other setup and additional equipment charges, discounts or promotions, plan perk and any other third-party services. .","image":"images/71M1Kxq7HHL.jpg"},{"id":2,"name":"Samsung Galaxy Tab A9 (Sm-x115) 8.7inch 64GB Cellular, New, Sealed","category":"Tablet","price":249.95,"description":"New Sealed 4GB of Ram Cellular Unlocked 8.7 inches Android 13 with One UI 5.1 Rear camera is 8MP Front Camera is 2MP 5100 mAh Battery.","image":"images/Samsung Galaxy Tab A9 (Sm-x115) 8.7inch 64GB Cellular, New, Sealed"},{"id":3,"name":"Samsung Galaxy S25 Plus, 256GB 5G . Unlocked, Dual Sim , New , Sealed","category":"Phone","price":949.95,"description":"specifications: Colors Mint , Navy , Silver Shadow\nDisplay: 6.7-inch Dynamic LTPO AMOLED 2X, with 3120x1440 resolution, 120Hz refresh rate, and 2600 nits peak brightness. Processor: Qualcomm Snapdragon 8 Elite for Galaxy. RAM: 12GB. Storage: 256GB or 512GB, non-expandable via card slot. Cameras: Rear: 50MP wide-angle lens, 10MP telephoto lens with 3x optical zoom, and 12MP ultra-wide-angle lens. It is capable of 8K video recording at 30fps. Front: 12MP wide-angle lens, capable of 4K video at 60fps. Battery: 4,995mAh, with 45W wired charging and 15W wireless charging. Software: Android 15 with One UI 7, and is promised 7 years of software and security updates. Durability: IP68 dust/water resistant with an aluminum frame. .","image":"images/Samsung Galaxy S25 128GB 5G Unlocked by Samsung, Dual Sim New Sealed"},{"id":4,"name":"XNET WIFI Data Plans 25GB","category":"WiFi","price":65.95,"description":"ata Plans Get reliable high-speed data wherever you need it — at home, on the road, or off the grid. 4G Data Plans 25 GB Great for travel or backup internet As Low As: $65 $52/mo for prepayment of 12 months Pricing shown is based on advance annual payment. “As low as” price reflects a 20% discount for prepayment of 12 months. Standard monthly price is $65 when billed month-to-month. 25 GB of high-speed LTE data Cancel anytime - no contracts Pay monthly, or save with upfront payments Save 5% when you pay for 3 months in advance Save 10% when you pay for 6 months in advance Save 20% when you pay for 12 months in advance ","image":"images/Xnet-Wifi.jpeg"},{"id":5,"name":"XNET WIFI Xplorer Hotspot 50 GB X Data Plan","category":"WiFi","price":75.95,"description":"Xplorer Hotspot The Xplorer Hotspot is your pocket-sized powerhouse for fast, reliable internet anywhere. With LTE Cat 6 speeds, dual-band Wi-Fi, and support for up to 16 devices, it’s perfect for travel, work, or staying connected off the grid. Want to receive your device pre-activated? Click here to purchase a Device + Data Plan bundle $199.00 Original price was: $199.00.$149.00 Current price is: $149.00. 50 GB X Data Plan Data Plan * Clear 50 GB of High-Speed Data $75.00 / month Activation Activation Fee To activate your vSIM and facilitate this service, a one-time Activation Fee is required. This fee is necessary to cover the costs involved in initiating the activation process with the carriers, generating usage reports, and maintaining the necessary infrastructure for continued connectivity. $30.00 $229.00 $179.00 one time, and $75.00 / month.","image":"images/Xnet-Wifi-.jpeg"},{"id":6,"name":"Verizon Home Internet 1GIG","category":"Internet Service","price":99.95,"description":"$99.99/Mo* 1Gig includes: Verizon Fios 1 Gig Fixed Broadband Consumer Disclosure Monthly Price $99.99 This Monthly Price is not an introductory rate. This Monthly Price does not require a monthly contract. Additional Charges & Terms Provider Monthly Fees NY Municipal Construction Surcharge $2.49 One-time Fees at the Time of Purchase Professional Installation $95 Deposit based on credit check $0 to $250 Late Fee $9 or 1.5% of past due balance (whichever is greater), as permitted by law Early Termination Fee None Government Taxes Included Discounts & Bundles Click here for available discounts and pricing options for broadband service bundled with other services like video, phone and wireless service, and use of your own equipment like modem and routers. Auto Pay and Paper-free Billing: $10 Speeds provided with Plan Typical Download Speed 938.62 Mbps Typical Upload Speed 865.01 Mbps Typical Latency 4.19 ms Data Included with Monthly Price Unlimited Charges for Additional Data Usage None Network Management Read our Policy Privacy Read our Policy Customer Support www.verizon.com/support/contact-us 800-837-4966 Learn more about the terms used on this label by visiting the Federal Communications Commission's Consumer Resource Center. fcc.gov/consumer F0030488753CR3583000000001 . . .","image":"images/71M1Kxq7HHL.jpg"},{"id":7,"name":"Tecno Spark Go 1S , 64GB , Dual Sim , 6.67-inch , Unlocked , New , Sealed","category":"Phone","price":219.95,"description":"Colors Black ,White  Processor: MediaTek Helio G50 octa-core chipset RAM and storage: 3GB RAM and 64GB of internal storage. The storage is expandable via a microSDXC card. Display: A 6.67-inch IPS LCD with a 90Hz refresh rate and a resolution of 720 x 1600 pixels. Cameras: 13MP main rear camera with phase detection autofocus (PDAF) and a dual LED flash. The front-facing camera is 8MP and also has a flash. Battery: A 5,000mAh battery that supports 15W fast charging via a USB Type-C port. Operating system: Android 14 (Go edition) with Tecno's HiOS 14. Other features: Dual SIM support, IPX4 water resistance, rear-mounted fingerprint sensor, and facial recognition for security","image":"images/tecno_spark_go_1s_black__76702.jpg"},{"id":8,"name":"XNET WIFI Xplorer Hotspot 100GB X Data Plan","category":"WiFi","price":85.95,"description":"Xplorer Hotspot The Xplorer Hotspot is your pocket-sized powerhouse for fast, reliable internet anywhere. With LTE Cat 6 speeds, dual-band Wi-Fi, and support for up to 16 devices, it’s perfect for travel, work, or staying connected off the grid. 💵 Flexible payment options available at checkout with PayPal Buy Now, Pay Later Want to receive your device pre-activated? Click here to purchase a Device + Data Plan bundle $199.95 Original price was: $199.00.$149.00Current price is: $149.00. 100 GB Pay-As-You-Go Plan 💸 One-time payment. No auto-renewal. Data * Duration * Clear Get 100 GB of high-speed data for 1 Month. One-time payment, no auto-renewal. PayPal & Buy Now, Pay Later available. $85.00 $284.00 $234.00 . ","image":"images/Xnet-Wifi--.jpeg"},{"id":9,"name":"Friggs Mobile Plan","category":"Plan","price":30.95,"description":"High speed data: A new generation of wireless carrier $30.00/mo 3 GB of 5G/4G high speed data Unlimited nationwide talk & text Bitcoin rewards every month Plan Details > 3 GB InternetDrop 3GB of 5G/4G high speed data Data speed reduces after 3GB 3GB Mobile HotSpot included Calling & TextingDrop Unlimited nationwide talk & text WiFi calling included eSIMDrop Bring your own device, unlocked and compatible ConditionsDrop No contract duration CashbackDrop Get 5% Bitcoin cashback on your monthly service fee. Get 10% cashback by adding plans for family or friends. Rewards are deposited into your fliggs wallet, you can choose to receive them in Bitcoin, Digital USD or another currencies. Wallet access made simple and secure. Broadband factsDrop The smarter choice. Stop overpaying, start saving. Choose an affordable mobile plan with low, guaranteed prices. Change or cancel your plan anytime, every month. You are in full control. Enjoy the fastest 5G network. Enjoy premium wireless on the fastest and largest 5G network in the US. All plans include 5G Ultra at no extra cost, which means you will get even faster 5G speeds. Get monthly Bitcoin cashback. Get back 5% to 10% of your service fee every month. The cashback is deposited in your fliggs wallet in Bitcoin or digital USD. Mobile plans that pay you back Earn a share of your service fee in Bitcoin, every month. Bitcoin Bitcoin Surf the fastest 5G network 0 0 0 Easy to use. 1 Install the fliggs mobile app from Google Play Store or Apple App Store. 2 Bring your own phone, compatible and unlocked. 3 Pick your plan, transfer your number or request a new one. Stay connected anytime, everywhere. bgImage Play Enjoy serious data privacy. 1 We do not exploit your information. We do not sell your data. 2 We apply the most robust data standards, across the entire nation. 3 We guard your personal data, and our commitment to privacy remains absolute. You'll love fliggs Our partnerships 5g network r17 aws icon logo Want to stay up to date? Sign up for the fliggs newsletter. Email Address Get the fliggs app. appStoreIcon appStoreIcon Features 5G Coverage Bring your own phone Bitcoin rewards Wallet Roaming packages Data boosters eSIM WiFi calling Mobile Hotspot Support FAQ Web3 Glossary About fliggs News Why fliggs Contact us TWITTER icon LINKEDIN icon INSTAGRAM icon FACEBOOK icon © 2025 fliggsmobile.com Privacy Policy Terms & Conditions Wallet Terms & Conditions Accessibility Acceptable Use Policy 911 and E911 disclosure Do not sell or share my Information ..","image":"images/galaxy-a36-black-11321.jpg"},{"id":10,"name":"Consumer Cellular Plan","category":"Plan","price":45.95,"description":"Unlimited Talk/Txt/20GB Data 1 Line Included Unlimited Data Unlimited Talk & Text $45/Month $45 due monthly . .","image":"images/tecno_spark_30c_black__28400.jpg"},{"id":11,"name":"AT&T Unlimited Plan Apple iPhone 17 Pro Max - 1TB","category":"Plan","price":133.93,"description":"Due monthly* $133.93 Due today $142.00 *Plus taxes and fees.See disclosures Your services will auto-renew monthly at then-current rates (less any discounts or promotions) unless you cancel by visiting att.com/cancel-info. Price details Due monthly $133.93 Apple iPhone 17 Pro Max - 1TB $44.45 Price for 36 mos. at 0% APR ONLINE ONLY: You will get an additional $200 in monthly bill credits ($5.56/mo. for 36 months) with new voice on elig. unlimited plan (speed restr's apply). Credits start within 3 bills. AT&T Unlimited Premium® PL plan See discounts $85.95 AT&T Administrative/Regulatory Cost Recovery Fee $3.49 Government taxes and additional AT&T fees extra. See details Due only on first bill $0.00 Activation fee $0.00 Due today $142.00 Next-day shipping fee FREE Apple iPhone 17 Pro Max - Deep Blue - 1TB Estimated device sales tax $142.00 Savings & promotions AutoPay and paperless billing discount . Billed monthly.","image":"images/iphone_17_pro_max_orange___13601.jpg"},{"id":12,"name":"TECNO Spark 30C , 256GB , 4G , 6.67 inches , Unlocked ,New , Sealed ","category":"Phone","price":249.95,"description":" Colors Black  Key features\nDisplay: A 6.67-inch IPS LCD with a 720p HD+ resolution and a smooth 120Hz refresh rate. Some variants may have a 6.6-inch screen with a 90Hz refresh rate and a 720p resolution. Performance: Powered by a MediaTek Helio G81 chipset (or G70 for some variants) and comes with up to 8GB of RAM, depending on the model. Virtual RAM expansion is also a feature. Camera: It has a dual-camera system on the back with a 50MP main sensor and an auxiliary lens. The front camera is 8MP and can shoot video at 1080p@30fps. Battery and charging: The device is powered by a large 5,000mAh non-removable battery and supports 18W wired charging. A full charge may take around 2 hours. Storage: The Spark 30C is available with different storage options, including 128GB and 256GB of internal storage, which is expandable via a microSDXC card. Audio: Includes a 3.5mm headphone jack and stereo speakers. Operating system: It runs on Android 14 with Tecno's HiOS skin. Some variants are specified with Android 12 and HiOS 8.6. Other features: The phone has a side-mounted fingerprint sensor, an IR blaster for controlling appliances, and an IP54 rating for dust and splash resistance","image":"images/tecno_spark_30c_white__64972.jpg"},{"id":13,"name":"Samsung Galaxy A03S ,32GB , 4G LTE , 6.5in , unlocked ,New , Sealed ","category":"Phone","price":209.95,"description":" Colors Black According to Samsung's official website and other sources, the Samsung Galaxy A03s has the following specifications:\nDisplay: 6.5-inch HD+ PLS LCD (1600 x 720 resolution) with a standard 60Hz refresh rate. Processor: MediaTek Helio P35 Octa-Core clocked at 2.3 GHz. Memory and storage: 3GB or 4GB of RAM and 32GB or 64GB of internal storage, expandable up to 1TB via a microSD card. Battery: 5,000mAh with 15W wired charging support. Rear cameras: Triple camera system with a 13MP main lens, a 2MP macro lens, and a 2MP depth sensor. Front camera: 5MP front-facing camera. Connectivity: 4G LTE, Wi-Fi 802.11 b/g/n, and Bluetooth 5.0. It also includes a 3.5mm headphone jack. Operating system: Launched with Android 11 and was upgradable to Android 13, but is no longer receiving major OS updates. Security: Side-mounted fingerprint sensor and facial recognition...","image":"images/51m45B3Yy+L.jpg"},{"id":14,"name":"ZTE Nubia Focus 6.5inch , 5G LTE 4GB+256GB ,Dual Sim , New , Sealed","category":"Phone","price":289.95,"description":"Colors Black   According to ZTE and GSMArena, the Nubia Focus 5G, released in early 2024, has the following specifications:\nDimensions: 163.6 x 74.9 x 8.6 mm. Weight: 205.5 g. Display: 6.6-inch IPS LCD with a 120Hz refresh rate and 1612 x 720 HD+ resolution. Processor: Unisoc T760 (6nm). RAM: Up to 16GB dynamic RAM (6GB + 10GB extended). Storage: 256GB UFS 3.1. Rear Camera: Dual 108MP (wide) + 2MP (depth). Front Camera: 5MP (software-enhanced to 8MP). Battery: 5,000mAh with 22.5W fast charging. Operating System: Android 13 or 14, depending on the region. Connectivity: 5G, Wi-Fi 802.11 a/b/g/n/ac, Bluetooth 5.0, NFC. Ports: USB Type-C, 3.5mm audio jack. Other features: Side fingerprint sensor, Live Island interactive notification display.  . .","image":"images/nabia_focus__55629.jpg"},{"id":15,"name":"ZTE Nubia Focus Pro, 6.7inch , 5G LTE ,256GB , Unlocked , New , Sealed","category":"Phone","price":339.95,"description":" Colors Black,Cream  Here is a detailed breakdown of the specifications for the nubia Focus Pro 5G, according to ZTE's official website and sources like GSMArena.\nDimensions: 166 x 76.1 x 8.5 mm. Weight: 206 g. Display: 6.72-inch IPS LCD with a 120Hz refresh rate and 1080 x 2400 FHD+ resolution. Processor: Unisoc T760 (6nm). Memory and storage: 8GB of LPDDR4X RAM with up to 12GB of additional dynamic RAM, and 256GB of UFS 3.1 storage. Rear cameras: Main: 108MP with f/1.7 aperture, Phase Detection Autofocus (PDAF), and Optical Image Stabilization (OIS). Ultrawide: 5MP. Depth: 2MP. Front camera: 32MP. Battery: 5,000mAh non-removable. Charging: 33W wired fast charging. Operating system: Launched with Android 13 and MyOS 13. Connectivity: 5G, Wi-Fi 802.11 a/b/g/n/ac, Bluetooth 5.2, and NFC. Ports: USB Type-C, but no 3.5mm headphone jack. Additional features: Camera controls: A physical sliding shortcut key for quick access to camera functions and a capacitive capture button. Live Island: Interactive notification area for important alerts. Biometrics: Side-mounted fingerprint sensor","image":"images/612Q5004-IL.jpg"},{"id":16,"name":"JBL Tune Flex Active Noise Cancelling Wireless Earbuds","category":"Accessories","price":149.95,"description":" JBL Pure Bass Sound: Smartly designed 12mm drivers enhanced by the stick form factor deliver JBL's Pure Bass Sound so you'll feel every pulsing beat. Active Noise Cancelling with Smart Ambient: Hear more of what you want, less of what you don't. Active Noise Cancelling technology with 2 microphones lets you minimize audio distractions. With Ambient Aware, you can tune into your surroundings at any time so that you feel safer when you're out in the world, while TalkThru lets you stop for a quick chat without having to remove your headphones. ","image":"images/0-1.jpeg"},{"id":17,"name":"Apple iPad A16 !1th Generation 128GB, WiFi Only","category":"Tablet","description":"11-INCH LIQUID RETINA DISPLAY—The gorgeous Liquid Retina display is an amazing way to watch movies or draw your next masterpiece.¹ True Tone adjusts the display to the color temperature of the room to make viewing comfortable in any light. PERFORMANCE AND STORAGE—The superfast A16 chip delivers a boost in performance for your favorite activities. And with all-day battery life, iPad is perfect for playing immersive games and editing photos and videos.² Storage starts at 128GB and goes up to 512GB.³ IPADOS + APPS—iPadOS makes iPad more productive, intuitive, and versatile. With iPadOS, run multiple apps at once, use Apple Pencil to write in any text field with Scribble, and edit and share photos.","variants":[{"id":301,"color":"Blue","price":469.95,"image":"images/0.jpeg"},{"id":302,"color":"Silver","price":469.95,"image":"images/0.jpeg"},{"id":303,"color":"Pink","price":469.95,"image":"images/0.jpeg"}]},{"id":18,"name":"Soundcore P301 By Anker Earbuds","category":"Accessories","price":99.95,"description":" JBL Pure Bass Sound: Smartly designed 12mm drivers enhanced by the stick form factor deliver JBL's Pure Bass Sound so you'll feel every pulsing beat. Active Noise Cancelling with Smart Ambient: Hear more of what you want, less of what you don't. Active Noise Cancelling technology with 2 microphones lets you minimize audio distractions. With Ambient Aware, you can tune into your surroundings at any time so that you feel safer when you're out in the world, while TalkThru lets you stop for a quick chat without having to remove your headphones. ","image":"images/0-2.jpeg"}];
+
+// But also create a flat list for homepage browsing
+const flattenedProducts = [];
+rawProducts.forEach(product => {
+  if (product.variants && Array.isArray(product.variants)) {
+    // For homepage: show base product only (no duplicates)
+    flattenedProducts.push({
+      id: product.id,
+      name: product.name,
+      category: product.category,
+      price: Math.min(...product.variants.map(v => v.price)), // lowest price
+      description: product.description,
+      image: product.variants[0].image,
+      hasVariants: true,
+      baseProduct: product
+    });
+  } else {
+    flattenedProducts.push({ ...product, hasVariants: false });
+  }
+});
+</script>
+  <footer class="bg-gray-800 text-white mt-12">
+  <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8 text-center">
+    <p class="text-sm">&copy; 2025 NewRock Wireless. All rights reserved. | Built with Red, White, & Blue power.</p>
+    <div class="flex justify-center space-x-4 mt-2">
+      <a href="#" class="text-gray-400 hover:text-white text-sm">Privacy Policy</a>
+      <a href="#" class="text-gray-400 hover:text-white text-sm">Terms of Service</a>
+      <a href="#" class="text-gray-400 hover:text-white text-sm">Contact Us</a>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+
+
+const app = {
+// Helper to get display name for toast messages
+getProductDisplayName(productId) {
+  for (const product of this.rawProducts) {
+    if (product.id === productId) return product.name;
+    if (product.variants) {
+      const variant = product.variants.find(v => v.id === productId);
+      if (variant) return `${product.name} (${variant.color})`;
+    }
+  }
+  return 'Item';
+},
+  view: 'home',
+  currentProductId: null,
+  filterCategory: null,
+  cart: [],
+  selectedVariantId: null,
+
+  // Use flattenedProducts from earlier script block
+  products: flattenedProducts,
+  rawProducts: rawProducts,
+
+  formatCurrency: (amount) => {
+    return new Intl.NumberFormat('en-US', {
+      style: 'currency',
+      currency: 'USD'
+    }).format(amount);
+  },
+
+  // --- View Rendering Functions ---
+  renderHome: () => {
+    const container = document.getElementById('app-container');
+    html = `
+  <div class="nrw-bg-blue rounded-xl shadow-2xl p-6 md:p-10 mb-10 border-4 border-white">
+    <div class="flex flex-col md:flex-row items-center justify-between">
+      <div class="text-white space-y-4">
+        <h2 class="text-3xl md:text-5xl font-extrabold mb-2 nrw-text-red">NEWROCK MEGA SALE!</h2>
+        <p class="text-xl md:text-2xl font-light">Get reliable high-speed data wherever you need it — at home, or on the road</p>
+        <div class="flex flex-col sm:flex-row gap-3">
+          <button onclick="app.setView('home', 'WiFi')" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-white bg-red-600 hover:bg-red-700 transition duration-150 shadow-lg">
+            Shop WiFi Plans
+          </button>
+          <button onclick="app.setView('home', 'Headsets & Earbuds')" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-white bg-red-600 hover:bg-red-700 transition duration-150 shadow-lg">
+            Shop Headsets & Earbuds
+          </button>
+          <button onclick="app.setView('home', 'Headsets & Earbuds')" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-white bg-red-600 hover:bg-red-700 transition duration-150 shadow-lg">
+            Shop Smart Watches
+          </button>
+        </div>
+      </div>
+      <div class="hidden md:block w-32 h-32 ml-8 mt-4 md:mt-0">
+        <img src="https://placehold.co/128x128/FFFFFF/1E40AF?text=Free+Shipping" class="rounded-full border-4 border-red-500 shadow-xl" alt="Flash Sale Icon"/>
+      </div>
+    </div>
+  </div>
+`;
+
+    const filteredProducts = app.filterCategory 
+      ? app.products.filter(p => p.category === app.filterCategory)
+      : app.products;
+
+    if (app.filterCategory) {
+      html += `<h2 class="text-3xl font-bold text-gray-800 mb-6">${app.filterCategory}s</h2>`;
+    } else {
+      html += `<h2 class="text-3xl font-bold text-gray-800 mb-6">Featured Products</h2>`;
+    }
+    
+    if (filteredProducts.length === 0) {
+      html += `<p class="text-center text-gray-500 py-10">No products found in this category.</p>`;
+    } else {
+      html += `<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">`;
+      filteredProducts.forEach(product => {
+        html += `
+          <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden flex flex-col">
+            <div class="h-48 bg-gray-100 flex items-center justify-center p-4">
+              <img src="${product.image}" onerror="this.onerror=null;this.src='https://placehold.co/400x300/E5E7EB/4B5563?text=NewRock';" alt="${product.name}" class="max-h-full max-w-full object-contain rounded-lg">
+            </div>
+            <div class="p-5 flex-grow flex flex-col">
+              <span class="text-xs font-semibold uppercase text-gray-500 mb-1">${product.category}</span>
+              <h3 class="text-lg font-bold text-gray-900 mb-2 truncate">${product.name}</h3>
+              <p class="text-xl font-extrabold nrw-text-red mb-4">${app.formatCurrency(product.price)}${['Plan', 'Internet Service', 'WiFi'].includes(product.category) ? '<span class="text-sm text-gray-500 font-normal">/mo</span>' : ''}</p>
+              <div class="mt-auto flex space-x-2">
+                <button onclick="app.setView('details', ${product.id})" class="flex-1 px-4 py-2 border border-gray-300 text-sm font-medium rounded-lg text-gray-700 hover:bg-gray-100 transition duration-150">Details</button>
+                <button onclick="app.addToCart(${product.hasVariants ? product.baseProduct.variants[0].id : product.id})" class="flex-1 nrw-btn-blue text-white text-sm font-medium rounded-lg shadow-md hover:shadow-lg transition duration-150 flex items-center justify-center">
+                  <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l-1 12H6L5 9z"></path></svg>Add
+                </button>
+              </div>
+            </div>
+          </div>
+        `;
+      });
+      html += `</div>`;
+    }
+    container.innerHTML = html;
+  },
+
+  renderDetails: () => {
+    const container = document.getElementById('app-container');
+    const baseProduct = app.rawProducts.find(p => p.id === app.currentProductId);
+    if (!baseProduct) {
+      container.innerHTML = `<div class="p-10 text-center"><h1 class="text-4xl text-gray-800 font-bold">Product Not Found</h1><button onclick="app.setView('home')" class="mt-5 nrw-btn-blue text-white px-5 py-2 rounded-lg">Back to Store</button></div>`;
+      return;
+    }
+
+    const hasVariants = baseProduct.variants && Array.isArray(baseProduct.variants);
+    const variants = hasVariants ? baseProduct.variants : [{ id: baseProduct.id, price: baseProduct.price, image: baseProduct.image, color: 'Default' }];
+    if (!app.selectedVariantId || !variants.some(v => v.id === app.selectedVariantId)) {
+      app.selectedVariantId = variants[0].id;
+    }
+    const selectedVariant = variants.find(v => v.id === app.selectedVariantId) || variants[0];
+
+    let swatchesHtml = '';
+    if (hasVariants) {
+      swatchesHtml = `
+        <div class="mb-6">
+          <span class="text-sm font-medium text-gray-700">Color:</span>
+          <div class="flex space-x-2 mt-1">
+            ${variants.map(variant => `
+              <button
+                data-variant-id="${variant.id}"
+                class="variant-swatch w-8 h-8 rounded-full border-2 ${variant.id === app.selectedVariantId ? 'border-gray-800' : 'border-transparent'}"
+                style="background-color: ${
+                  variant.color === 'Blue' ? '#3B82F6' :
+                  variant.color === 'Silver' ? '#D9D2D9' :
+                  variant.color === 'Pink' ? '#D1A1CB' :
+                  '#cccccc'
+                }"
+                title="${variant.color}"
+                onclick="app.selectVariant(${variant.id})"
+              ></button>
+            `).join('')}
+          </div>
+        </div>
+      `;
+    }
+
+    container.innerHTML = `
+      <div class="bg-white rounded-xl shadow-2xl p-6 md:p-10">
+        <div class="flex flex-col lg:flex-row gap-8">
+          <div class="lg:w-1/2 bg-gray-50 rounded-lg p-6 flex items-center justify-center">
+            <img id="product-image" src="${selectedVariant.image}" onerror="this.onerror=null;this.src='https://placehold.co/600x450/E5E7EB/4B5563?text=NewRock+Product';" alt="${baseProduct.name}" class="w-full h-auto object-contain rounded-lg max-h-96">
+          </div>
+          <div class="lg:w-1/2">
+            <span class="text-sm font-semibold uppercase text-gray-500">${baseProduct.category}</span>
+            <h1 class="text-4xl font-extrabold text-gray-900 mt-2 mb-2">${baseProduct.name}</h1>
+            <p id="product-price" class="text-3xl font-extrabold nrw-text-red mb-4">
+              ${app.formatCurrency(selectedVariant.price)}${['Plan', 'Internet Service', 'WiFi'].includes(baseProduct.category) ? '<span class="text-lg text-gray-500 font-normal">/month</span>' : ''}
+            </p>
+            ${swatchesHtml}
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Description</h3>
+            <p class="text-gray-600 mb-8 leading-relaxed">
+              ${baseProduct.description}
+              <br><br>The ${baseProduct.name}, like our other offerings comes with the consistant quality our customers have come to expect, another great product from NewRock Wireless.
+            </p>
+            <div class="flex items-center space-x-4">
+              <button id="add-to-cart-btn" onclick="app.addToCart(${selectedVariant.id})" class="nrw-btn-blue text-white px-8 py-3 text-lg font-semibold rounded-xl shadow-md hover:shadow-lg transition duration-150 flex items-center">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l-1 12H6L5 9z"></path></svg>Add to Cart
+              </button>
+              <button onclick="app.setView('home')" class="px-6 py-3 border border-gray-300 text-gray-700 text-lg font-semibold rounded-xl hover:bg-gray-100 transition duration-150">Back to Shopping</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+  },
+
+renderCart: () => {
+  const container = document.getElementById('app-container');
+  
+  if (app.cart.length === 0) {
+    container.innerHTML = `
+      <div class="max-w-3xl mx-auto bg-white p-8 rounded-xl shadow-2xl text-center">
+        <h1 class="text-4xl font-bold nrw-text-red mb-4">Your Shopping Cart</h1>
+        <div class="text-gray-500 mb-8">
+          <svg class="w-16 h-16 mx-auto text-gray-300 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+          </svg>
+          <p class="text-xl font-semibold">Your cart is currently empty.</p>
+          <p class="text-md">Time to grab some cutting-edge electronics!</p>
+        </div>
+        <button onclick="app.setView('home')" class="nrw-btn-blue text-white px-6 py-3 rounded-lg font-semibold shadow-md hover:shadow-xl transition duration-150">
+          Continue Shopping
+        </button>
+      </div>
+    `;
+    return;
+  }
+
+  // Helper: Find product info by ID (supports variants)
+  function findProductById(productId) {
+    for (const product of app.rawProducts) {
+      if (product.id === productId) {
+        // Base product (no variants)
+        return {
+          id: product.id,
+          name: product.name,
+          category: product.category,
+          price: product.price,
+          image: product.image
+        };
+      }
+      if (product.variants && Array.isArray(product.variants)) {
+        const variant = product.variants.find(v => v.id === productId);
+        if (variant) {
+          // Found a variant → build full name
+          return {
+            id: variant.id,
+            name: `${product.name} (${variant.color})`,
+            category: product.category,        // ← inherited!
+            price: variant.price,
+            image: variant.image
+          };
+        }
+      }
+    }
+    return null; // not found
+  }
+
+  // Calculate totals
+  const subtotal = app.cart.reduce((sum, item) => {
+    const product = findProductById(item.id);
+    return sum + (product ? product.price * item.quantity : 0);
+  }, 0);
+  const taxRate = 0.08875;
+  const tax = subtotal * taxRate;
+  const total = subtotal + tax;
+
+  // Render cart items
+  let cartItemsHtml = app.cart.map(item => {
+    const product = findProductById(item.id);
+    if (!product) return ''; // skip if not found
+
+    const itemTotal = product.price * item.quantity;
+    
+    return `
+      <div class="flex items-center py-4 border-b border-gray-200 last:border-b-0">
+        <div class="flex-shrink-0 w-16 h-16 mr-4">
+          <img 
+            src="${product.image}" 
+            onerror="this.onerror=null;this.src='https://placehold.co/64x64/E5E7EB/4B5563?text=Product';" 
+            class="w-full h-full object-cover rounded-lg" 
+            alt="${product.name}">
+        </div>
+        <div class="flex-grow">
+          <h3 class="text-lg font-semibold text-gray-900">${product.name}</h3>
+          <p class="text-sm text-gray-500">${product.category}</p>
+        </div>
+        <div class="flex items-center space-x-2 mx-4">
+          <button 
+            onclick="app.updateCartQuantity(${item.id}, -1)" 
+            class="w-8 h-8 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-700 transition duration-150">
+            <span class="text-lg font-bold">-</span>
+          </button>
+          <span class="text-lg font-medium w-6 text-center">${item.quantity}</span>
+          <button 
+            onclick="app.updateCartQuantity(${item.id}, 1)" 
+            class="w-8 h-8 rounded-full nrw-bg-blue hover:bg-blue-600 text-white transition duration-150">
+            <span class="text-lg font-bold">+</span>
+          </button>
+        </div>
+        <div class="text-right ml-4 w-28">
+          <p class="text-lg font-bold text-gray-900">${app.formatCurrency(itemTotal)}</p>
+        </div>
+        <button 
+          onclick="app.deleteFromCart(${item.id})" 
+          class="ml-4 text-red-500 hover:text-red-700 p-1 rounded-full hover:bg-red-100 transition duration-150">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
+          </svg>
+        </button>
+      </div>
+    `;
+  }).join('');
+
+  container.innerHTML = `
+    <div class="flex flex-col lg:flex-row gap-8">
+      <div class="lg:w-2/3 bg-white p-6 rounded-xl shadow-2xl">
+        <h1 class="text-3xl font-bold text-gray-800 mb-6 border-b pb-4">Your Shopping Cart (${app.cart.length} Items)</h1>
+        <div class="divide-y divide-gray-100">
+          ${cartItemsHtml}
+        </div>
+        <button onclick="app.setView('home')" class="mt-6 nrw-btn-blue text-white px-5 py-2 rounded-lg font-medium shadow-md hover:shadow-xl transition duration-150">
+          &larr; Continue Shopping
+        </button>
+      </div>
+
+      <div class="lg:w-1/3">
+        <div class="bg-gray-50 p-6 rounded-xl shadow-2xl border-t-4 border-red-500">
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">Order Summary</h2>
+          <div class="space-y-3">
+            <div class="flex justify-between text-gray-700">
+              <span>Subtotal:</span>
+              <span class="font-medium">${app.formatCurrency(subtotal)}</span>
+            </div>
+            <div class="flex justify-between text-gray-700">
+              <span>Tax (8.875%):</span>
+              <span class="font-medium">${app.formatCurrency(tax)}</span>
+            </div>
+            <div class="flex justify-between pt-4 border-t border-gray-300">
+              <span class="text-xl font-extrabold nrw-text-red">Order Total:</span>
+              <span class="text-xl font-extrabold nrw-text-red">${app.formatCurrency(total)}</span>
+            </div>
+          </div>
+          <button 
+            onclick="app.handleCheckout()"
+            class="w-full mt-6 nrw-btn-blue text-white text-lg font-semibold py-3 rounded-xl shadow-lg hover:bg-blue-600 transition duration-150">
+            Proceed to Checkout
+          </button>
+        </div>
+        <div class="mt-8 p-4 nrw-bg-red rounded-xl shadow-xl text-center text-green">
+          <p class="text-lg font-light">Free Shipping included</p>
+          <p class="text-sm font-light">for all items</p>
+        </div>
+      </div>
+    </div>
+  `;
+},
+
+  // --- Variant Handling ---
+  selectVariant: (variantId) => {
+    app.selectedVariantId = variantId;
+    app.updateVariantUI();
+  },
+
+  updateVariantUI: () => {
+    const baseProduct = app.rawProducts.find(p => p.id === app.currentProductId);
+    if (!baseProduct || !baseProduct.variants) return;
+    const variant = baseProduct.variants.find(v => v.id === app.selectedVariantId) || baseProduct.variants[0];
+    
+    const img = document.querySelector('#product-image');
+    if (img) img.src = variant.image;
+
+    const priceEl = document.querySelector('#product-price');
+    if (priceEl) {
+      priceEl.innerHTML = `${app.formatCurrency(variant.price)}${baseProduct.category === 'Plan' ? '<span class="text-lg text-gray-500 font-normal">/month</span>' : ''}`;
+    }
+
+    const addToCartBtn = document.querySelector('#add-to-cart-btn');
+    if (addToCartBtn) {
+      addToCartBtn.onclick = () => app.addToCart(variant.id);
+    }
+
+    document.querySelectorAll('.variant-swatch').forEach(btn => {
+      const vid = parseInt(btn.dataset.variantId);
+      btn.classList.toggle('border-gray-800', vid === variant.id);
+      btn.classList.toggle('border-transparent', vid !== variant.id);
+    });
+  },
+
+  // --- Cart Functions ---
+addToCart: (productId) => {
+  const existingItem = app.cart.find(item => item.id === productId);
+  if (existingItem) {
+    existingItem.quantity += 1;
+  } else {
+    app.cart.push({ id: productId, quantity: 1 });
+  }
+  const name = app.getProductDisplayName(productId); // ✅
+  app.showTemporaryMessage(`Added 1x ${name} to cart!`);
+  app.updateCartCount();
+  if (app.view === 'cart') app.render();
+},
+
+  updateCartQuantity: (productId, delta) => {
+    const itemIndex = app.cart.findIndex(item => item.id === productId);
+    if (itemIndex > -1) {
+      const newQuantity = app.cart[itemIndex].quantity + delta;
+      if (newQuantity > 0) {
+        app.cart[itemIndex].quantity = newQuantity;
+      } else {
+        app.deleteFromCart(productId);
+      }
+    }
+    app.updateCartCount();
+    app.render();
+  },
+
+deleteFromCart: (productId) => {
+  const name = app.getProductDisplayName(productId); // ✅
+  app.cart = app.cart.filter(item => item.id !== productId);
+  app.showTemporaryMessage(`${name} removed from cart.`, 'bg-red-500');
+  app.updateCartCount();
+  app.render();
+},
+
+  updateCartCount: () => {
+    const count = app.cart.reduce((sum, item) => sum + item.quantity, 0);
+    document.getElementById('cartCount').textContent = count;
+  },
+
+  // --- Fixed Toast Message ---
+  showTemporaryMessage: (message, bgColor = 'bg-green-500') => {
+    const existing = document.getElementById('toast-message');
+    if (existing) existing.remove();
+
+    const msgEl = document.createElement('div');
+    msgEl.id = 'toast-message';
+    msgEl.className = `fixed bottom-5 left-1/2 transform -translate-x-1/2 p-4 rounded-lg text-white shadow-xl z-[100] ${bgColor}`;
+    msgEl.textContent = message;
+    document.body.appendChild(msgEl);
+
+    setTimeout(() => {
+      msgEl.classList.add('transition-opacity', 'duration-300', 'opacity-0');
+      setTimeout(() => {
+        if (msgEl.parentNode) msgEl.parentNode.removeChild(msgEl);
+      }, 300);
+    }, 2700);
+  },
+
+  // --- Navigation ---
+  setView: (newView, param = null) => {
+    app.view = newView;
+    app.currentProductId = null;
+    app.filterCategory = null;
+    app.selectedVariantId = null;
+
+    if (newView === 'details' && typeof param === 'number') {
+      app.currentProductId = param;
+    } else if (newView === 'home' && typeof param === 'string') {
+      app.filterCategory = param;
+    }
+    window.scrollTo(0, 0); // 👈 Scroll to top
+    app.render();
+  },
+
+  handleCheckout: () => {
+    const subtotal = app.cart.reduce((sum, item) => {
+      const allProducts = [...app.products, ...app.rawProducts.flatMap(p => p.variants || [])];
+      const product = allProducts.find(p => p.id === item.id);
+      return sum + (product ? product.price * item.quantity : 0);
+    }, 0);
+    const tax = subtotal * 0.08875;
+    const total = subtotal + tax;
+    app.showTemporaryMessage(`You will be redirected to our secure payment portal.\n\nPlease manually enter the total amount: $${total.toFixed(2)}`);
+    setTimeout(() => {
+      window.location.href = 'https://pay.allcreditfinancialservices.com/Newrockwireless0469';
+    }, 3000);
+  },
+
+  render: () => {
+    app.updateCartCount();
+    if (app.view === 'home') app.renderHome();
+    else if (app.view === 'cart') app.renderCart();
+    else if (app.view === 'details') app.renderDetails();
+
+  // Wait for DOM paint, then scroll
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      window.scrollTo({ top: 25, behavior: 'smooth' });
+    });
+  });
+  }
+};
+
+window.onload = () => {
+  app.render();
+};
+</script>
+</body>
+</html>
