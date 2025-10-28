@@ -201,7 +201,7 @@ has the following specifications:
   name: "JBL Tune Flex Active Noise Cancelling Wireless Earbuds"
   category: "Headsets & Earbuds"
   price: 149.95
-  description: " JBL Pure Bass Sound: Smartly designed 12mm drivers enhanced by the stick form factor deliver JBL's Pure Bass Sound so you'll feel every pulsing beat.
+  description: " White or Blue. JBL Pure Bass Sound: Smartly designed 12mm drivers enhanced by the stick form factor deliver JBL's Pure Bass Sound so you'll feel every pulsing beat.
 Active Noise Cancelling with Smart Ambient: Hear more of what you want, less of what you don't. Active Noise Cancelling technology with 2 microphones lets you minimize audio distractions. With Ambient Aware, you can tune into your surroundings at any time so that you feel safer when you're out in the world, while TalkThru lets you stop for a quick chat without having to remove your headphones. "
   image: "images/0-1.jpeg"
 
@@ -229,10 +229,10 @@ Active Noise Cancelling with Smart Ambient: Hear more of what you want, less of 
       image: "images/0.jpeg"
 
 - id: 18       #ID MUMBER HERE-CHANGE TO AVOID DUPLICATION
-  name: "Soundcore P301 By Anker Earbuds"
+  name: "Soundcore P30i, By Anker Earbuds , New ,Sealed"
   category: "Headsets & Earbuds"
   price: 99.95
-  description: " JBL Pure Bass Sound: Smartly designed 12mm drivers enhanced by the stick form factor deliver JBL's Pure Bass Sound so you'll feel every pulsing beat.
+  description: " White or Powder Blue. JBL Pure Bass Sound: Smartly designed 12mm drivers enhanced by the stick form factor deliver JBL's Pure Bass Sound so you'll feel every pulsing beat.
 Active Noise Cancelling with Smart Ambient: Hear more of what you want, less of what you don't. Active Noise Cancelling technology with 2 microphones lets you minimize audio distractions. With Ambient Aware, you can tune into your surroundings at any time so that you feel safer when you're out in the world, while TalkThru lets you stop for a quick chat without having to remove your headphones. "
   image: "images/0-2.jpeg"
 
@@ -240,7 +240,7 @@ Active Noise Cancelling with Smart Ambient: Hear more of what you want, less of 
   name: "Apple Watch Ultra 3, 49mm, New , Sealed"
   category: "Smart Watches"
   price: 899.95
-  description: "The Apple Watch Ultra 3
+  description: "Black. The Apple Watch Ultra 3 
 builds on its predecessor with a few notable improvements, including enhanced connectivity and a better display. Key features include: 
 
     Satellite communications: A major new feature for the Ultra 3
