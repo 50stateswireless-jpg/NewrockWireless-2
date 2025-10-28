@@ -216,17 +216,18 @@ Active Noise Cancelling with Smart Ambient: Hear more of what you want, less of 
       color: "Blue"
       price: 469.95
     # minStock: true/false
-      image: "images/0.jpeg"
+      image: "images/Apple-iPad-A16-11th-Gen-Blue.jpg"
     - id: 302
       color: "Silver"
       price: 469.95
     # minStock: true/false
-      image: "images/0.jpeg"
+      image: "images/Apple-iPad-A16-11th-Gen-Silver.jpg"
     - id: 303
       color: "Pink"
       price: 469.95  # maybe premium color costs more
     # minStock: true/false
-      image: "images/0.jpeg"
+      image: "images/Apple-iPad-A16-11th-Gen-Pink.jpeg"
+
 
 - id: 18       #ID MUMBER HERE-CHANGE TO AVOID DUPLICATION
   name: "Soundcore P30i, By Anker Earbuds , New ,Sealed"
