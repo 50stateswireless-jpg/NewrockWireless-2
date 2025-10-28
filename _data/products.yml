@@ -253,7 +253,7 @@ builds on its predecessor with a few notable improvements, including enhanced co
     Advanced health features: New health features arriving with watchOS 26 include hypertension notifications an"
   image: "images/Apple-Watch-Ultra-3-49mm.jpg"
 
-  id: 20      #ID MUMBER HERE-CHANGE TO AVOID DUPLICATION
+- id: 20      #ID MUMBER HERE-CHANGE TO AVOID DUPLICATION
   name: "Maxwest Vice 4G Flip Phone , Unlocked , New , Sealed"
   category: "Phone"
   price: 119.95
@@ -276,7 +276,7 @@ builds on its predecessor with a few notable improvements, including enhanced co
     Compatibility: Works with GSM networks like T-Mobile and AT&T but is not compatible with the Verizon network.                                                               "
   image: "images/maxwest_vice_black__53943.jpg"
 
-  id: 21       #ID MUMBER HERE-CHANGE TO AVOID DUPLICATION
+- id: 21       #ID MUMBER HERE-CHANGE TO AVOID DUPLICATION
   name: " Maxwest Ranger , 4G ,32GB , Unlocked , New , Sealed"
   category: "Phone"
   price: 119.95
