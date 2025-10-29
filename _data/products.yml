@@ -90,8 +90,7 @@
   name: "XNET WIFI Xplorer Hotspot 100GB X Data Plan"
   category: "WiFi"
   price: 85.95
-  description: "Xplorer Hotspot The Xplorer Hotspot is your pocket-sized powerhouse for fast, reliable internet anywhere. With LTE Cat 6 speeds, dual-band Wi-Fi, and support for up to 16 devices, it’s perfect for travel, work, or staying connected off the grid. 💵 Flexible payment options available at checkout with PayPal Buy Now, Pay Later Want to receive your device pre-activated? Click here to purchase a Device + Data Plan bundle $199.95 Original price was: $199.00.$149.00Current price is: $149.00. 100 GB Pay-As-You-Go Plan 💸 One-time payment. No auto-renewal. Data * Duration * Clear Get 100 GB of high-speed data for 1 Month. One-time payment, no auto-renewal. PayPal & Buy Now, Pay Later available. $85.00 $284.00 $234.00 .
-"
+  description: "Xplorer Hotspot The Xplorer Hotspot is your pocket-sized powerhouse for fast, reliable internet anywhere. With LTE Cat 6 speeds, dual-band Wi-Fi, and support for up to 16 devices, it’s perfect for travel, work, or staying connected off the grid. 💵 Flexible payment options available at checkout with PayPal Buy Now, Pay Later Want to receive your device pre-activated? Click here to purchase a Device + Data Plan bundle $199.95 Original price was: $199.00.$149.00Current price is: $149.00. 100 GB Pay-As-You-Go Plan 💸 One-time payment. No auto-renewal. Data * Duration * Clear Get 100 GB of high-speed data for 1 Month. One-time payment, no auto-renewal. PayPal & Buy Now, Pay Later available. $85.00 $284.00 $234.00 ."
   image: "images/Xnet-Wifi--.jpeg"
 
 - id: 9
@@ -121,7 +120,7 @@
   price: 249.95
   description: " Colors Black  Key features
 
- Display: A 6.67-inch IPS LCD with a 720p HD+ resolution and a smooth 120Hz refresh rate. Some variants may have a 6.6-inch screen with a 90Hz refresh rate and a 720p resolution.
+Display: A 6.67-inch IPS LCD with a 720p HD+ resolution and a smooth 120Hz refresh rate. Some variants may have a 6.6-inch screen with a 90Hz refresh rate and a 720p resolution.
     Performance: Powered by a MediaTek Helio G81 chipset (or G70 for some variants) and comes with up to 8GB of RAM, depending on the model. Virtual RAM expansion is also a feature.
     Camera: It has a dual-camera system on the back with a 50MP main sensor and an auxiliary lens. The front camera is 8MP and can shoot video at 1080p@30fps.
     Battery and charging: The device is powered by a large 5,000mAh non-removable battery and supports 18W wired charging. A full charge may take around 2 hours.
@@ -290,10 +289,10 @@ builds on its predecessor with a few notable improvements, including enhanced co
   image: "images/maxwest_ranger_black__72703.jpg"
 
 - id: 22       #ID MUMBER HERE-CHANGE TO AVOID DUPLICATION
-  name: "Maxwest NEO M1 Candy Bar Phone ,Unlocked ,New , Sealed "
+  name: "Maxwest NEO M1 Candy Bar Phone ,Unlocked ,New , Sealed"
   category: "Phoned"
   price: 109.95
-  description: " Blue, Black and Gray Candy bar smartphone
+  description: "Blue, Black and Gray Candy bar smartphone
  3x flash
  1.77” screen
  Dual sim
@@ -302,14 +301,14 @@ builds on its predecessor with a few notable improvements, including enhanced co
  GSM quad band
  Unlocked
  Overseas
- Here works with H2O and Ultra                   "
+ Here works with H2O and Ultra"
   image: "images/maxwest-NEO-M1-Mobile-aPhone-User-Manual_1-185x300.jpg"
 
 - id: 23       #ID MUMBER HERE-CHANGE TO AVOID DUPLICATION
    name: "Maxwest Uno Clam X1, 1.8'inch ,Unlocked , New, Sealed"
    category: "Phone"
    price: 109.95
-   description: " Colors Black, Blue , Red , Gold.   Form Factor: The classic clamshell (flip) design protects the    screen and keypad.
+   description: "Colors Black, Blue , Red , Gold.   Form Factor: The classic clamshell (flip) design protects the    screen and keypad.
  Screen: 1.8-inch display.
  Carrier: Sold as an unlocked device, compatible with most GSM carriers.
  Network: Supports quad-band GSM (850/900/1800/1900), and some versions may support WCDMA for 3G networks.
