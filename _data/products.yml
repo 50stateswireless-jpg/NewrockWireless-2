@@ -304,15 +304,15 @@ builds on its predecessor with a few notable improvements, including enhanced co
  Here works with H2O and Ultra"
   image: "images/maxwest-NEO-M1-Mobile-aPhone-User-Manual_1-185x300.jpg"
 
-#- - id: 23       #ID MUMBER HERE-CHANGE TO AVOID DUPLICATION
-#-    name: "Maxwest Uno Clam X1, 1.8'inch ,Unlocked , New, Sealed"
-#-    category: "Phone"
-#-    price: 109.95
-#-    description: "Colors Black, Blue , Red , Gold.   Form Factor: The classic clamshell (flip) design protects the    screen and keypad.
-#-  Screen: 1.8-inch display.
-#-  Carrier: Sold as an unlocked device, compatible with most GSM carriers.
-#-  Network: Supports quad-band GSM (850/900/1800/1900), and some versions may support WCDMA for 3G networks.
-#-  SIM: Available with either a single or dual SIM card slot.
-#-  Storage: Includes a microSD card slot for expandable storage (often up to 8GB).
-#-  Multimedia: Features a basic VGA camera, Bluetooth connectivity, and GPRS/WAP support"
-#-  image: "images/71mNOZ4dT5L-_AC_SL1500___30335.jpg"
+- id: 23       #ID MUMBER HERE-CHANGE TO AVOID DUPLICATION
+  name: "Maxwest Uno Clam X1, 1.8'inch ,Unlocked , New, Sealed"
+  category: "Phone"
+  price: 109.95
+  description: "Colors Black, Blue , Red , Gold.   Form Factor: The classic clamshell (flip) design protects the    screen and keypad.
+  Screen: 1.8-inch display.
+  Carrier: Sold as an unlocked device, compatible with most GSM carriers.
+  Network: Supports quad-band GSM (850/900/1800/1900), and some versions may support WCDMA for 3G networks.
+  SIM: Available with either a single or dual SIM card slot.
+  Storage: Includes a microSD card slot for expandable storage (often up to 8GB).
+  Multimedia: Features a basic VGA camera, Bluetooth connectivity, and GPRS/WAP support"
+  image: "images/71mNOZ4dT5L-_AC_SL1500___30335.jpg"
