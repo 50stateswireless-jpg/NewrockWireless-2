@@ -289,5 +289,20 @@ builds on its predecessor with a few notable improvements, including enhanced co
     Special features: A standout feature is its 4000mAh battery that can be used as a power bank to charge other devices. It also includes a flashlight"
   image: "images/maxwest_ranger_black__72703.jpg"
 
+- id: 22       #ID MUMBER HERE-CHANGE TO AVOID DUPLICATION
+  name: "PRODUCT NAME HERE"
+  category: "Phoned"
+  price: 109.95
+  description: " Blue, Black and Gray Candy bar smartphone
+ 3x flash
+ 1.77” screen
+ Dual sim
+ Camera
+ Fm radio
+ GSM quad band
+ Unlocked
+ Overseas
+ Here works with H2O and Ultra                   "
+  image: "URL OR PATH TO PRODUCT IMAGE HERE"
 
   
