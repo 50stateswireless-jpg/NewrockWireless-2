@@ -408,3 +408,17 @@ Chipset: T107
 UNISOC "
   image: "images/LOGIC-Z1L-Flip_8060_1.png"
 
+- id: 27       #ID MUMBER HERE-CHANGE TO AVOID DUPLICATION
+  name: "Sky Elite Octax Tablet , 8.0 in ,WiFi Only, 32GB , New , Sealed"
+  category: "Tablet"
+  price: 179.95
+  description: "Black. Display: 8-inch HD IPS screen with a resolution of 1280 x 800.
+Processor: 2.0 GHz Octa-Core CPU. Some models may have a 1.6 GHz processor.
+Memory and storage: 32GB of internal storage, paired with either 1GB or 3GB of RAM, depending on the specific model.
+Operating system: Typically runs on Android 11.
+Connectivity: Supports Wi-Fi and 4G connectivity, making it suitable for both home and on-the-go use. Some variants may offer dual SIM support.
+Battery: 4000mAh battery.
+Cameras: 5MP rear camera and a 2MP front camera.
+Accessories: Often bundled with a protective silicone case and screen protector"
+  image: "URL OR PATH TO PRODUCT IMAGE HERE"
+
