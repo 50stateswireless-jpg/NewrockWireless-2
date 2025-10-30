@@ -340,3 +340,28 @@ Front: 16MP.
 Speed & Power: Qualcomm Snapdragon® 750G.
 Memory: 6GB RAM, 64GB internal storage, Micro SD support up to 512GB."
   image: "images/orbic_myra_5g__43224.jpg"
+
+
+- id: 25      #ID MUMBER HERE-CHANGE TO AVOID DUPLICATION
+  name: "Orbic Tabet 10R , 5G , 128GB , WIFI , New , Sealed"
+  category: "Tablet"
+  price: 219.95
+  description: "Black. The Orbic TAB10R 5G UW is a 10-inch ruggedized tablet designed for both everyday use and demanding environments
+
+    . It features 5G Ultra Wideband connectivity, primarily through Verizon. 
+    Here are some of its key features:
+        Durability: The TAB10R 5G UW is built to MIL-810 and IP65 standards, making it resistant to drops, bumps, water, and other environmental factors.
+        Connectivity: It supports Verizon’s 5G Ultra Wideband (including C-band and mmWave), and also has 4G and 3G capabilities.
+        Performance: The tablet is powered by a Qualcomm® Snapdragon™ 480 5G Octa-core 2.4GHz processor, coupled with 6GB of RAM and 128GB of internal storage (expandable up to 1TB with a Micro SD card).
+        Battery: It includes a 6000 mAh battery with Quick Charge 3.0 technology for faster recharging.
+        Display: The 10-inch HD TFT display is scratch-resistant and supports stylus input.
+        Operating System: It runs on Android 12, with ongoing security and OS updates.
+        Cameras: The tablet has an 8MP front-facing camera and a 13MP rear camera with flash. 
+
+    User Experience
+    Reviews of the Orbic TAB10R 5G UW (and the related Orbic Speed 5G hotspot) suggest a mixed user experience:
+        Positive: Some users praise the fast 5G speeds, portability, and ease of setup. It’s seen as a reliable solution for those who need constant high-speed internet on the go.
+        Negative: Other users report issues with battery life, random shutdowns, and connectivity problems, particularly in areas with competing Wi-Fi 6 devices. There have also been complaints about faulty batteries and difficulty obtaining replacements"
+  image: "URL OR PATH TO PRODUCT IMAGE HERE"
+
+
