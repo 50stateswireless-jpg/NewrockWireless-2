@@ -115,10 +115,10 @@
   image: "images/iphone_17_pro_max_orange___13601.jpg"
 
 - id: 12
-  name: "TECNO Spark 30C , 256GB , 4G , 6.67 inches , Unlocked ,New , Sealed "
+  name: "TECNO Spark 30C , 256GB , 4G , 6.67 inches , Unlocked ,New , Sealed"
   category: "Phone"
   price: 249.95
-  description: " Colors Black  Key features
+  description: "Colors Black  Key features
 
 Display: A 6.67-inch IPS LCD with a 720p HD+ resolution and a smooth 120Hz refresh rate. Some variants may have a 6.6-inch screen with a 90Hz refresh rate and a 720p resolution.
     Performance: Powered by a MediaTek Helio G81 chipset (or G70 for some variants) and comes with up to 8GB of RAM, depending on the model. Virtual RAM expansion is also a feature.
@@ -131,10 +131,10 @@ Display: A 6.67-inch IPS LCD with a 720p HD+ resolution and a smooth 120Hz refre
   image: "images/tecno_spark_30c_white__64972.jpg"
 
 - id: 13
-  name: "Samsung Galaxy A03S ,32GB , 4G LTE , 6.5in , unlocked ,New , Sealed "
+  name: "Samsung Galaxy A03S ,32GB , 4G LTE , 6.5in , unlocked ,New , Sealed"
   category: "Phone"
   price: 209.95
-  description: " Colors Black According to Samsung's official website and other sources, the Samsung Galaxy A03s
+  description: "Colors Black According to Samsung's official website and other sources, the Samsung Galaxy A03s
 has the following specifications: 
 
     Display: 6.5-inch HD+ PLS LCD (1600 x 720 resolution) with a standard 60Hz refresh rate.
@@ -173,7 +173,7 @@ has the following specifications:
   name: "ZTE Nubia Focus Pro, 6.7inch , 5G LTE ,256GB , Unlocked , New , Sealed"
   category: "Phone"
   price: 339.95
-  description: " Colors Black,Cream  Here is a detailed breakdown of the specifications for the nubia Focus Pro 5G, according to ZTE's official website and sources like GSMArena. 
+  description: "Colors Black,Cream  Here is a detailed breakdown of the specifications for the nubia Focus Pro 5G, according to ZTE's official website and sources like GSMArena. 
 
     Dimensions: 166 x 76.1 x 8.5 mm.
     Weight: 206 g.
@@ -208,7 +208,7 @@ Active Noise Cancelling with Smart Ambient: Hear more of what you want, less of 
   name: "Apple iPad A16 !1th Generation 128GB, WiFi Only"
   category: "Tablet"
   description: "11-INCH LIQUID RETINA DISPLAY—The gorgeous Liquid Retina display is an amazing way to watch movies or draw your next masterpiece.¹ True Tone adjusts the display to the color temperature of the room to make viewing comfortable in any light.
-    PERFORMANCE AND STORAGE—The superfast A16 chip delivers a boost in performance for your favorite activities. And with all-day battery life, iPad is perfect for playing immersive games and editing photos and videos.² Storage starts at 128GB and goes up to 512GB.³
+    PERFORMANCE AND STORAGE-The superfast A16 chip delivers a boost in performance for your favorite activities. And with all-day battery life, iPad is perfect for playing immersive games and editing photos and videos. Storage starts at 128GB and goes up to 512GB.
     IPADOS + APPS—iPadOS makes iPad more productive, intuitive, and versatile. With iPadOS, run multiple apps at once, use Apple Pencil to write in any text field with Scribble, and edit and share photos."
   variants:
     - id: 301
@@ -232,8 +232,8 @@ Active Noise Cancelling with Smart Ambient: Hear more of what you want, less of 
   name: "Soundcore P30i, By Anker Earbuds , New ,Sealed"
   category: "Headsets & Earbuds"
   price: 99.95
-  description: " White or Powder Blue. JBL Pure Bass Sound: Smartly designed 12mm drivers enhanced by the stick form factor deliver JBL's Pure Bass Sound so you'll feel every pulsing beat.
-Active Noise Cancelling with Smart Ambient: Hear more of what you want, less of what you don't. Active Noise Cancelling technology with 2 microphones lets you minimize audio distractions. With Ambient Aware, you can tune into your surroundings at any time so that you feel safer when you're out in the world, while TalkThru lets you stop for a quick chat without having to remove your headphones. "
+  description: "White or Powder Blue. JBL Pure Bass Sound: Smartly designed 12mm drivers enhanced by the stick form factor deliver JBL's    Pure Bass Sound so you'll feel every pulsing beat.
+  Active Noise Cancelling with Smart Ambient: Hear more of what you want, less of what you don't. Active Noise Cancelling technology with   2 microphones lets you minimize audio distractions. With Ambient Aware, you can tune into your surroundings at any time so that you   feel safer when you're out in the world, while TalkThru lets you stop for a quick chat without having to remove your headphones."
   image: "images/0-2.jpeg"
 
 - id: 19       #ID MUMBER HERE-CHANGE TO AVOID DUPLICATION
@@ -241,13 +241,13 @@ Active Noise Cancelling with Smart Ambient: Hear more of what you want, less of 
   category: "Smart Watches"
   price: 899.95
   description: "Black. The Apple Watch Ultra 3 
-builds on its predecessor with a few notable improvements, including enhanced connectivity and a better display. Key features include: 
+  builds on its predecessor with a few notable improvements, including enhanced connectivity and a better display. Key features include: 
 
     Satellite communications: A major new feature for the Ultra 3
     is built-in satellite connectivity. This allows you to send an Emergency SOS, send messages, and share your location via the Find My app even when you are off the grid without cellular or WiFi.
     Upgraded display: The Always-On Retina display is now wide-angle LTPO3 OLED technology, which is more power-efficient and offers better viewing angles. It features a slightly larger screen area due to smaller bezels, a higher refresh rate for the always-on mode, and reaches a peak brightness of 3,000 nits.
     Longer battery life: The Ultra 3
-    offers up to 42 hours of battery life with normal use, an improvement over the Ultra 2's 36 hours. In Low Power Mode, it can last for up to 72 hours. It also supports faster charging.
+    offers up to 42 hours of battery life with normal use, an improvement over the Ultra 2's 36 hours. In Low Power Mode, it can last for     up to 72 hours. It also supports faster charging.
     5G connectivity: It supports 5G cellular for improved network performance in areas with coverage.
     Advanced health features: New health features arriving with watchOS 26 include hypertension notifications an"
   image: "images/Apple-Watch-Ultra-3-49mm.jpg"
@@ -256,7 +256,7 @@ builds on its predecessor with a few notable improvements, including enhanced co
   name: "Maxwest Vice 4G Flip Phone , Unlocked , New , Sealed"
   category: "Phone"
   price: 119.95
-  description: " Black, Blue, silver
+  description: "Black, Blue, silver
 
     Design: Flip-style phone with a durable plastic body.
     Displays:
@@ -276,10 +276,10 @@ builds on its predecessor with a few notable improvements, including enhanced co
   image: "images/maxwest_vice_black__53943.jpg"
 
 - id: 21       #ID MUMBER HERE-CHANGE TO AVOID DUPLICATION
-  name: " Maxwest Ranger , 4G ,32GB , Unlocked , New , Sealed"
+  name: "Maxwest Ranger , 4G ,32GB , Unlocked , New , Sealed"
   category: "Phone"
   price: 119.95
-  description: " Black. This feature phone is built for durability and includes a number of basic communication  features. 
+  description: "Black. This feature phone is built for durability and includes a number of basic communication  features. 
 
     Design and display: It features a 2.4-inch color display and a physical keypad.
     Durability: The phone is rugged, with a build that is resistant to water, dust, and shocks. It is designed for outdoor use or demanding job site conditions.
@@ -366,7 +366,7 @@ Memory: 6GB RAM, 64GB internal storage, Micro SD support up to 512GB."
 
 
 - id: 26       #ID MUMBER HERE-CHANGE TO AVOID DUPLICATION
-  name: "Logic Z1L Flip Phone , 4G , Dual Sim , Unlocked , New , Sealed "
+  name: "Logic Z1L Flip Phone , 4G , Dual Sim , Unlocked , New , Sealed"
   category: "Phone"
   price: 139.95
   description: "Gray or White.  
@@ -405,7 +405,7 @@ Loudspeaker
 Browser , PROCESSOR
 
 Chipset: T107
-UNISOC "
+UNISOC"
   image: "images/LOGIC-Z1L-Flip_8060_1.png"
 
 - id: 27       #ID MUMBER HERE-CHANGE TO AVOID DUPLICATION
