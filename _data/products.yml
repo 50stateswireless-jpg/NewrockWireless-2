@@ -38,7 +38,7 @@
   category: "Tablet"
   price: 249.95
   description: "Dark Blue , Silver ,Gray .New Sealed 4GB of Ram Cellular Unlocked 8.7 inches Android 13 with One UI 5.1 Rear camera is 8MP Front Camera is 2MP 5100 mAh Battery."
-  image: "images/Samsung Galaxy Tab A9 (Sm-x115) 8.7inch 64GB Cellular, New, Sealed"
+  image: "images/Samsung Galaxy Tab A9 (Sm-x115) 8.7inch 64GB Cellular, New, Sealed.jpg"
 
 - id: 3
   name: "Samsung Galaxy S25 Plus, 256GB 5G . Unlocked, Dual Sim , New , Sealed"
@@ -56,7 +56,7 @@
     Battery: 4,995mAh, with 45W wired charging and 15W wireless charging.
     Software: Android 15 with One UI 7, and is promised 7 years of software and security updates.
     Durability: IP68 dust/water resistant with an aluminum frame. ."
-  image: "images/Samsung Galaxy S25 128GB 5G Unlocked by Samsung, Dual Sim New Sealed"
+  image: "images/Samsung-Galaxy-S25-128GB-5G-Unlocked-by-Samsung-Dual-Sim-New-Sealed.jpg"
 
 - id: 4
   name: "XNET WIFI Data Plans 25GB"
@@ -427,12 +427,8 @@ Accessories: Often bundled with a protective silicone case and screen protector"
   name: "Samsung Galaxy Tab A9 (Sm-x115) 8.7inch 64GB , WiFi, New, Sealed"
   category: "Tablet"
   price: 249.95
-  description: "Silver. 4GB of Ram
-  Unlocked
-  8.7 inches
-  Android 13 with One UI 5.1
-  Rear camera is 8MP
-  Front Camera is 2MP
-  5100 mAh Battery                                            
+  description: "Silver. 4GB of Ram Unlocked 8.7 inches Android 13 with One UI 5.1 Rear camera is 8MP Front Camera is 2MP 5100 mAh Battery
+
+The Samsung Galaxy Tab A9 (Sm-x115) 8.7inch 64GB , WiFi, New, Sealed, like our other offerings comes with the consistant quality our customers have come to expect, another great product from NewRock Wireless."                                         
   image: "images/Samsung Galaxy Tab A9 (Sm-x115) 8.7inch 64GB Cellular, New, Sealed.jpg"
  
